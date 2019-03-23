@@ -1,0 +1,53 @@
+body{
+  background-color: black;
+}
+select{
+font-size: 50px;
+color:darkblue;
+
+}
+h1{
+  font-size: 50px;
+  color:darkorange;
+  font-style: bold;
+}
+
+span{
+  margin-left: 600px;
+}
+
+.spacesize{
+  margin-left: 600px;
+}
+.spacesize1{
+  margin-left: 600px;
+}
+/* .spacesize2{
+  margin-left: 600px;
+} */
+.spacesize3{
+  margin-left: 600px;
+}
+
+.button2 {
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 600px;
+    background-color: white;
+    color: grey;
+    border: 2px solid #008CBA;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.font1{
+    color: darkblue;
+     text-shadow: 2px 2px 4px #fff;
+  }
+
+.image{
+  margin-left: 200px;
+}

@@ -1,0 +1,76 @@
+<!Doctype html>
+<html>
+<body>
+
+<link rel="stylesheet" href="stylesheet/staticads.css">
+
+
+<form class="font1">
+  <div class="spacesize">
+  <select id="city">
+    <option value="Bangalore">Bangalore</option>
+    <option value="Rajasthan">Rajasthan</option>
+    <option value="Delhi">Delhi</option>
+  </select>
+  </div>
+  <div class="spacesize1">
+  <select name="time">
+    <option value="1100">1100</option>
+    <option value="1200">1200</option>
+    <option value="1800">1800</option>
+    <option value="1900">1900</option>
+    <option value="2100">2100</option>
+    <option value="2200">2200</option>
+    <option value="2300">2300</option>
+  </select>
+  </div>
+  <!-- <div class="spacesize2">
+  <select name="temperature">
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="25">25</option>
+    <option value="35">35</option>
+    <option value="38">38</option>
+    <option value="40">40</option>
+  </select>
+  </div> -->
+  <div class="spacesize3">
+  <select name="transport">
+    <option value="cab">cab</option>
+    <option value="metro">metro</option>
+  </select>
+  </div>
+  <br><br>
+  <button class="button2" onclick="display1()">Submit</button>
+</form>
+<br><br><br>
+
+<img id="ad" src="images/uber.png" alt="ad" class="image" width="700px" height="500px"></img>
+<p id="ad1"></p>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDNfeqDu4VnyH8PhPbPFJULe7CIx_vckI4",
+    authDomain: "final-1b5ed.firebaseapp.com",
+    databaseURL: "https://final-1b5ed.firebaseio.com",
+    projectId: "final-1b5ed",
+    storageBucket: "final-1b5ed.appspot.com",
+    messagingSenderId: "893748496256"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script>
+  function display1(){
+   var city=document.getElementById('city').value;
+   document.getElementById('ad1').innerHTML=city;
+  }
+  </script>
+
+</body>
+</html>
